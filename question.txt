@@ -1,0 +1,46 @@
+Question: Python Class for Vector Database Operations 
+ 
+Objective  
+Design and implement a Python class that provides an interface for CRUD operations on text documents 
+within a vector database. 
+ 
+1. Task   
+Your challenge is to create a Python class that encapsulates the interaction with a vector database of your 
+choice (such as Weaviate, FAISS, ChromaDB, etc.). The class should enable the following operations:  
+• Collection Creation: Define a method that creates a new collection or index within the vector 
+database to store vectorized text documents.  
+• Document Insertion: Implement a method that receives a plain text input, vectorizes it, and adds it 
+as a new entry in the collection.  
+• Document Update: Develop a method that updates or replaces an existing text entry in the database 
+with new text provided as an argument.  
+• Document Deletion: Create a method that deletes a text entry from the database based on a 
+specified identifier.  
+• Document Retrieval: Create a method that receives a plain text input and a number N. Return the 
+top N documents from the database that are ordered in relevancy to the text.   
+ 
+2. Instructions and Additional Information  
+•  The script should be compatible with Python 3.x.  
+•  Include a `requirements.txt` file specifying all necessary dependencies.  
+•  Provide a `README.md` file with clear instructions for setting up the environment, running the 
+script, and performing each one of the operations.  
+•  Include a sample text file to be used for demonstrating the CRUD operations.  
+•  Follow a test-driven development approach using `pytest`. Add unit tests for your class. 
+3. Bonus  
+Expand your class to include methods that generate RESTful web services for each operation, allowing for 
+interactions with the database over HTTP.  
+4. Evaluation Criteria  
+•  Correctness: The script must accurately extract the required metadata and segment the text 
+content into chunks according to the specified criteria. Implement error handling for edge cases such 
+as missing fields or malformed JSON.  
+•  Efficiency: Optimize the script for speed and resource management, suitable for processing a large 
+batch of files. Demonstrate the use of efficient data structures, algorithms, and possibly concurrency 
+or parallelism to minimize processing time.  
+•  Modularity: Code should be well-organized, with a clear separation of concerns. Functions should 
+be designed to be reusable and maintainable. Include comprehensive comments to enhance code 
+readability and facilitate understanding of the processing logic.  
+•  Flexibility: Ensure the function is adaptable for different sets of metadata fields and variable text 
+chunk sizes. It should accommodate changes in segmentation criteria and processing requirements 
+without significant codebase changes.  
+5. Submission  
+Push your complete solution to a public GitHub repository and include the repository URL in your 
+submission.    
